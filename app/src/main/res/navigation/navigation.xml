@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.helloworld.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_buttonsFragment"
+            app:destination="@id/buttonsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_inputsFragment"
+            app:destination="@id/inputsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_radiosFragment"
+            app:destination="@id/radiosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputsFragment"
+        android:name="com.example.helloworld.InputsFragment"
+        android:label="fragment_inputs"
+        tools:layout="@layout/fragment_inputs" />
+    <fragment
+        android:id="@+id/buttonsFragment"
+        android:name="com.example.helloworld.ButtonsFragment"
+        android:label="fragment_buttons"
+        tools:layout="@layout/fragment_buttons" />
+    <fragment
+        android:id="@+id/radiosFragment"
+        android:name="com.example.helloworld.RadiosFragment"
+        android:label="fragment_radios"
+        tools:layout="@layout/fragment_radios" />
+</navigation>
