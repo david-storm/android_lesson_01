@@ -50,7 +50,7 @@
             android:layout_marginStart="@dimen/medium"
             android:layout_marginTop="@dimen/small"
             android:layout_marginEnd="@dimen/medium"
-            android:text="@string/buuton_with_buttons"
+            android:text="@string/button_with_buttons"
             app:cornerRadius="50sp"
             app:layout_constraintBottom_toTopOf="@+id/buttonToinputs"
             app:layout_constraintEnd_toEndOf="parent"
