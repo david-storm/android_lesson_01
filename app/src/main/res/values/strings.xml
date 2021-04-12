@@ -10,5 +10,13 @@
     <string name="button_number">кнопка номер %s</string>
     <string name="symbol_plus">+</string>
     <string name="many_buttons">Ну может хватит уже?!</string>
+    <string name="text_inputs_info">Поля ввода разного типа</string>
+    <string name="one_line_text">Однострочный текст</string>
+    <string name="multi_line_text">Текст на 5 строк</string>
+    <string name="password">Пароль</string>
+    <string name="date">Год</string>
+    <string name="hide_keyboard">Спрятать %s клавиатуру</string>
+    <string name="date_value">1980</string>
+    <string name="_123456">123456</string>
 
 </resources>
