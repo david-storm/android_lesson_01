@@ -8,6 +8,16 @@
         <item name="lineHeight">1.2sp</item>
     </style>
 
+    <style name="smallText">
+        <item name="android:fontFamily">@font/kurale</item>
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="checkBox">
+        <item name="android:color">@android:attr/listChoiceIndicatorMultiple</item>
+        <item name="android:layoutDirection">rtl</item>
+    </style>
+
     <style name="styleButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>

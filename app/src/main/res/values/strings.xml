@@ -18,5 +18,13 @@
     <string name="hide_keyboard">Спрятать %s клавиатуру</string>
     <string name="date_value">1980</string>
     <string name="_123456">123456</string>
+    <string name="appliances">Приборы</string>
+    <string name="radios">Выключить радио</string>
+    <string name="slider">Выключить ползунок</string>
+    <string name="text_info_radio">Выбрать вариант по радио</string>
+    <string name="variant_1">Вариант 1</string>
+    <string name="variant_2">Вариант 2</string>
+    <string name="variant_3">Вариант 3</string>
+    <string name="text_info_slider">Выбрать вариант ползунком</string>
 
 </resources>
