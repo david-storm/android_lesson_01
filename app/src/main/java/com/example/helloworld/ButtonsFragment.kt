@@ -13,6 +13,7 @@ import com.example.helloworld.databinding.FragmentButtonsBinding
 
 class ButtonsFragment : Fragment() {
 
+
     private var countButtons: Int = 1
     private lateinit var binding: FragmentButtonsBinding
     private lateinit var countries: Array<String>
@@ -22,6 +23,7 @@ class ButtonsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         binding =
             DataBindingUtil.inflate(
                 inflater,
