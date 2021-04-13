@@ -4,4 +4,6 @@
     <dimen name="medium">24dp</dimen>
     <dimen name="small">16dp</dimen>
     <dimen name="imageSize">200sp</dimen>
+    <dimen name="small_text">14sp</dimen>
+
 </resources>
