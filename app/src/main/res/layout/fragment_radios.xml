@@ -11,36 +11,121 @@
 
 
         <TextView
-            android:id="@+id/textInfo"
+            android:id="@+id/textInfoCheckBoxes"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/medium"
-            android:fontFamily="@font/kurale"
             android:text="@string/text_info"
-            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/buttonOne"
+        <CheckBox
+            android:id="@+id/checkBoxMain"
+            style="@style/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginEnd="@dimen/medium"
+            android:text="@string/appliances"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInfoCheckBoxes" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRadios"
+            style="@style/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginEnd="@dimen/medium"
+            android:enabled="false"
+            android:text="@string/radios"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMain" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSlider"
+            style="@style/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginEnd="@dimen/medium"
+            android:enabled="false"
+            android:text="@string/slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxRadios" />
+
+        <TextView
+            android:id="@+id/textInfoRadios"
+            style="@style/smallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="174dp"
-            tools:layout_editor_absoluteY="112dp"
-            tools:text="Кнопка номер раз"/>
+            android:layout_marginTop="@dimen/extra_large"
+            android:text="@string/text_info_radio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxSlider" />
 
-        <Button
-            android:id="@+id/buttonPlus"
-            android:layout_width="50sp"
-            android:layout_height="50sp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="24dp"
-            android:background="@color/teal_200"
-            android:text="@string/symbol_plus"
-            app:cornerRadius="50sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInfoRadios">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/variant_1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/variant_2" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/variant_3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textInfoSlider"
+            style="@style/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small"
+            android:text="@string/text_info_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <SeekBar
+            android:id="@+id/slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium"
+            android:layout_marginTop="@dimen/medium"
+            android:layout_marginEnd="@dimen/medium"
+            android:max="3"
+            android:min="1"
+            android:progress="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInfoSlider" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
