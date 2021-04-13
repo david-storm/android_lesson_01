@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="mainText">
+        <item name="android:fontFamily">@font/kurale</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">48sp</item>
+        <item name="lineHeight">1.2sp</item>
+    </style>
+
+    <style name="styleButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
