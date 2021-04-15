@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <TextView
             android:id="@+id/textInfoCheckBoxes"
             android:layout_width="wrap_content"
@@ -22,26 +21,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-        <Button
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/buttonPlus"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="50sp"
-            android:layout_height="50sp"
-            android:layout_marginEnd="@dimen/medium"
-            android:layout_marginBottom="@dimen/medium"
-            android:background="@drawable/button_oval"
-            android:text="@string/symbol_plus"
-            android:textColor="@color/cardview_dark_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/medium"
+            android:contentDescription="@string/symbol_plus"
+            android:src="@drawable/ic_baseline_add"
             android:textSize="@dimen/small_text"
             app:backgroundTint="@color/color_button_plus"
-            app:cornerRadius="50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInfoCheckBoxes">
@@ -53,11 +49,13 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buttonOne"
+                    style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/medium"
+                    android:backgroundTint="@color/purple_500"
                     android:textAlignment="center"
                     tools:text="Кнопка номер раз" />
 

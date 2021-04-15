@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="largeText">48sp</dimen>
     <dimen name="medium">24dp</dimen>
     <dimen name="small">16dp</dimen>
     <dimen name="imageSize">200sp</dimen>
     <dimen name="small_text">12sp</dimen>
-    <dimen name="extra_small">2sp</dimen>
+    <dimen name="extra_small">5sp</dimen>
     <dimen name="extra_large">64dp</dimen>
 </resources>

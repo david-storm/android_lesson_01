@@ -15,7 +15,7 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentMainBinding>(
             inflater,
             R.layout.fragment_main, container, false
@@ -24,7 +24,7 @@ class MainFragment : Fragment() {
         binding.buttonToButtons.setOnClickListener{ view: View ->
             view.findNavController().navigate(R.id.action_mainFragment_to_buttonsFragment)
         }
-        binding.buttonToinputs.setOnClickListener{ view: View ->
+        binding.buttonToInputs.setOnClickListener{ view: View ->
             view.findNavController().navigate(R.id.action_mainFragment_to_inputsFragment)
         }
         binding.buttonToRadios.setOnClickListener{ view: View ->

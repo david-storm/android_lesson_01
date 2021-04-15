@@ -4,12 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatButton
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.helloworld.databinding.FragmentButtonsBinding
-
 
 class ButtonsFragment : Fragment() {
 
@@ -17,12 +16,12 @@ class ButtonsFragment : Fragment() {
     private var countButtons: Int = 1
     private lateinit var binding: FragmentButtonsBinding
     private lateinit var countries: Array<String>
-    private val MAX_COUNT_BUTTONS = 10
+    private val maxButtonsCount = 10
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding =
             DataBindingUtil.inflate(
@@ -40,17 +39,17 @@ class ButtonsFragment : Fragment() {
 
     private fun addMoreButtons() {
 
-        if (countButtons == MAX_COUNT_BUTTONS) {
+        val contextRequire = context ?: return
+
+        if (countButtons >= maxButtonsCount) {
             Toast.makeText(
                 context, getString(R.string.many_buttons),
                 Toast.LENGTH_SHORT
             ).show()
             return
         }
-
         countButtons++
-
-        val btnNew = Button(context)
+        val btnNew = AppCompatButton(contextRequire)
         btnNew.text = getString(R.string.button_number, countries[countButtons])
         btnNew.background = binding.buttonOne.background
         btnNew.setTextColor(binding.buttonOne.textColors)

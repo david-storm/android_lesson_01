@@ -44,44 +44,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonToButtons"
             style="@style/styleButton"
             android:layout_marginStart="@dimen/medium"
             android:layout_marginTop="@dimen/small"
             android:layout_marginEnd="@dimen/medium"
             android:text="@string/button_with_buttons"
-            app:cornerRadius="50sp"
-            app:layout_constraintBottom_toTopOf="@+id/buttonToinputs"
+            app:layout_constraintBottom_toTopOf="@+id/buttonToInputs"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_world" />
 
-        <Button
-            android:id="@+id/buttonToinputs"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonToInputs"
             style="@style/styleButton"
             android:layout_marginStart="@dimen/medium"
             android:layout_marginTop="@dimen/small"
             android:layout_marginEnd="@dimen/medium"
             android:text="@string/button_with_input"
-            app:cornerRadius="50sp"
             app:layout_constraintBottom_toTopOf="@+id/buttonToRadios"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonToButtons" />
 
-        <Button
-
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonToRadios"
             style="@style/styleButton"
             android:layout_marginStart="@dimen/medium"
             android:layout_marginTop="@dimen/small"
             android:layout_marginEnd="@dimen/medium"
             android:text="@string/button_with_radio"
-            app:cornerRadius="50sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonToinputs" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonToInputs" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
