@@ -16,7 +16,7 @@ class RadiosFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_radios, container, false)
 
@@ -79,6 +79,7 @@ class RadiosFragment : Fragment() {
                     1 -> binding.radioButton.isChecked = true
                     2 -> binding.radioButton2.isChecked = true
                     3 -> binding.radioButton3.isChecked = true
+                    else -> binding.radioButton0.isChecked = true
                 }
             }
 

@@ -5,7 +5,6 @@
     <string name="button_with_buttons">Кнопки и табуретки</string>
     <string name="button_with_input">Поля выпаса ввода</string>
     <string name="button_with_radio">Чекбокс на Радио</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_info">Кнопка плюс добавляет новую кнопку в контейнер наверху</string>
     <string name="button_number">кнопка номер %s</string>
     <string name="symbol_plus">+</string>

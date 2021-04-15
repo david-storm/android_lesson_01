@@ -16,7 +16,7 @@ class InputsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding =
             DataBindingUtil.inflate<FragmentInputsBinding>(
                 inflater,
@@ -26,13 +26,13 @@ class InputsFragment : Fragment() {
             )
         binding.button.text = getString(R.string.hide_keyboard, System.getProperty("line.separator"))
         binding.button.setOnClickListener {
-            hideKeyboard(it)
+            hideKeyBoard(it)
         }
 
         return binding.root
     }
 
-    fun hideKeyboard(view: View){
+    private fun hideKeyBoard(view: View){
         val imm =
             requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken, 0)
